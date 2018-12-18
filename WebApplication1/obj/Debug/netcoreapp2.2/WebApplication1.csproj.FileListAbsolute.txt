@@ -1,0 +1,14 @@
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.csprojAssemblyReference.cache
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.csproj.CoreCompileInputs.cache
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorAssemblyInfo.cache
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorAssemblyInfo.cs
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.AssemblyInfoInputs.cache
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.AssemblyInfo.cs
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.deps.json
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.runtimeconfig.json
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.runtimeconfig.dev.json
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.dll
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.pdb
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorTargetAssemblyInfo.cache
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/DataToAdvertisementTransformer.dll
+/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/DataToAdvertisementTransformer.pdb
