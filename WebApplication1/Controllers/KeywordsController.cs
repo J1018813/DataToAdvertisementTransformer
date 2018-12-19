@@ -1,10 +1,15 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using DataToAdvertisementTransformer.Data;
 using DataToAdvertisementTransformer.DataTransferObjects;
 using DataToAdvertisementTransformer.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using DataToAdvertisementTransformer.Hubs;
+using Microsoft.AspNetCore.SignalR;
+using Newtonsoft.Json;
 
 namespace DataToAdvertisementTransformer.Controllers
 {
@@ -13,10 +18,12 @@ namespace DataToAdvertisementTransformer.Controllers
     public class KeywordsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IHubContext<BubbleHub> _hubContext;
 
-        public KeywordsController(ApplicationDbContext context)
+        public KeywordsController(ApplicationDbContext context, IHubContext<BubbleHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
         
         // GET
@@ -28,7 +35,7 @@ namespace DataToAdvertisementTransformer.Controllers
         
         // POST
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] KeywordLocationDTO keywordLocationDto)
+        public async Task<IActionResult> Post([FromBody] KeywordLocationDto keywordLocationDto)
         {
             // Check if keywordLocation is already found
             var keyword = await _context.Keywords.FirstOrDefaultAsync(k => k.Text.Equals(keywordLocationDto.Keyword));
@@ -57,12 +64,16 @@ namespace DataToAdvertisementTransformer.Controllers
             _context.KeywordLocations.Add(newKeywordLocation);
             await _context.SaveChangesAsync();
 
+            var keywords = await _context.Keywords.Select(k => new KeywordDto(k.Text, k.Amount)).ToListAsync();
+            
+            await _hubContext.Clients.All.SendAsync(JsonConvert.SerializeObject(keywords));
+
             return Ok();
         }
         
         // POST
         [HttpPost("many")]
-        public async Task<IActionResult> Post([FromBody] List<KeywordLocationDTO> keywordLocationDtos)
+        public async Task<IActionResult> Post([FromBody] List<KeywordLocationDto> keywordLocationDtos)
         {
             var keywordLocations = new List<KeywordLocation>();
             
@@ -94,7 +105,12 @@ namespace DataToAdvertisementTransformer.Controllers
             }
 
             _context.KeywordLocations.AddRange(keywordLocations);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();            
+            
+            var keywords = await _context.Keywords.Select(k => new KeywordDto(k.Text, k.Amount)).ToListAsync();
+            
+            await _hubContext.Clients.All.SendAsync(JsonConvert.SerializeObject(keywords));
+            
             return Ok();
         }
     }

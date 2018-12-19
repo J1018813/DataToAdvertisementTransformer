@@ -12161,11 +12161,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
+      "projectUniqueName": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
       "projectName": "DataToAdvertisementTransformer",
-      "projectPath": "/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
+      "projectPath": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
       "packagesPath": "/home/jorn/.nuget/packages/",
-      "outputPath": "/home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/",
+      "outputPath": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

@@ -10,7 +10,7 @@ namespace DataToAdvertisementTransformer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20181217104136_init")]
-    partial class init
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

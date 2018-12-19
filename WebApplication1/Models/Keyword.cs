@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DataToAdvertisementTransformer.Models
 {
@@ -7,5 +8,6 @@ namespace DataToAdvertisementTransformer.Models
         public int Id { get; set; }
         public string Text { get; set; }
         public List<KeywordLocation> KeywordLocations { get; set; }
+        public int Amount => KeywordLocations != null ? KeywordLocations.Sum(kl => kl.Amount) : 0;
     }
 }

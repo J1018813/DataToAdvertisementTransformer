@@ -1,4 +1,5 @@
 ﻿using DataToAdvertisementTransformer.Data;
+using DataToAdvertisementTransformer.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,8 @@ namespace DataToAdvertisementTransformer
 
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +47,10 @@ namespace DataToAdvertisementTransformer
             }
 
             app.UseHttpsRedirection();
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<BubbleHub>("/bubblehub");
+            });
             app.UseMvc();
         }
     }

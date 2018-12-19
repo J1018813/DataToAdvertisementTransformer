@@ -10,7 +10,7 @@ namespace DataToAdvertisementTransformer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20181217142110_second")]
-    partial class second
+    partial class Second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
