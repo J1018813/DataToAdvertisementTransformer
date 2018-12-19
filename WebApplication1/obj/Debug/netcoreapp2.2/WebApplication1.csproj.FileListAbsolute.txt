@@ -12,3 +12,17 @@
 /home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorTargetAssemblyInfo.cache
 /home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/DataToAdvertisementTransformer.dll
 /home/jorn/RiderProjects/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/DataToAdvertisementTransformer.pdb
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.deps.json
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.runtimeconfig.json
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.runtimeconfig.dev.json
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.dll
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/bin/Debug/netcoreapp2.2/DataToAdvertisementTransformer.pdb
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.csprojAssemblyReference.cache
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.csproj.CoreCompileInputs.cache
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorAssemblyInfo.cache
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorAssemblyInfo.cs
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.AssemblyInfoInputs.cache
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.AssemblyInfo.cs
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/WebApplication1.RazorTargetAssemblyInfo.cache
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/DataToAdvertisementTransformer.dll
+/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/Debug/netcoreapp2.2/DataToAdvertisementTransformer.pdb

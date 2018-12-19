@@ -7241,7 +7241,7 @@
       ]
     },
     "MySqlConnector/0.47.1": {
-      "sha512": "bwEjq0yLcf6SKCS64/kjql8RC/mFP9n7tGVqqShMW2QgoBJr9tflEWy8S0jupMk4oMPqjqjooMQqqwzZROwPug==",
+      "sha512": "xaguKNuiYX34PYnvxJ+ATr6SoNjbJZqWclqsmqsqdNg68sdjqHP8PPp8IOpuiD/ai0S64dUth3//c7XaArZQQg==",
       "type": "package",
       "path": "mysqlconnector/0.47.1",
       "files": [
@@ -7430,7 +7430,7 @@
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/2.1.4": {
-      "sha512": "/GngSqZ0GgRh6NOpnQvQQunYbu4drSE9O3omshM4aVj4/CSRrSdkGobqaSs+0erMVK6DpfLXINIWBMZqIz1xUQ==",
+      "sha512": "1/MZSy58cC5dGlql5ecesFOE8lawUIsXu9vzuuqhs7/tD+29cSykRyV9o2brqoCGfwO6xUtQF38/YL6k9khJaQ==",
       "type": "package",
       "path": "pomelo.entityframeworkcore.mysql/2.1.4",
       "files": [
@@ -7442,7 +7442,7 @@
       ]
     },
     "Pomelo.JsonObject/2.0.0": {
-      "sha512": "sMN9ETMoYfqCegOCVkOkOkfXK3ceH8nWkSeZPgLwfnx6UnqVXTl/ScIZs+x5Q8qgiPmYYCPmtolxNQ0QrcU97g==",
+      "sha512": "5udTrGULDbHLx3Xb2DAqeeMTPxPu9TmeS6RAanMeRXOKZn3FRrBVd+Vg8TeTB0QIk1Q0su8mgsmN39O4iYca1Q==",
       "type": "package",
       "path": "pomelo.jsonobject/2.0.0",
       "files": [
@@ -12155,23 +12155,23 @@
     ]
   },
   "packageFolders": {
-    "/home/jorn/.nuget/packages/": {},
+    "/home/djesse/.nuget/packages/": {},
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
+      "projectUniqueName": "/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
       "projectName": "DataToAdvertisementTransformer",
-      "projectPath": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
-      "packagesPath": "/home/jorn/.nuget/packages/",
-      "outputPath": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/obj/",
+      "projectPath": "/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
+      "packagesPath": "/home/djesse/.nuget/packages/",
+      "outputPath": "/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/jorn/.config/NuGet/NuGet.Config"
+        "/home/djesse/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

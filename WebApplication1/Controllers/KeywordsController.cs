@@ -38,14 +38,14 @@ namespace DataToAdvertisementTransformer.Controllers
         public async Task<IActionResult> Post([FromBody] KeywordLocationDto keywordLocationDto)
         {
             // Check if keywordLocation is already found
-            var keyword = await _context.Keywords.FirstOrDefaultAsync(k => k.Text.Equals(keywordLocationDto.Keyword));
+            var keyword = await _context.Keywords.FirstOrDefaultAsync(k => k.Text.Equals(keywordLocationDto.Name));
            
             // Create new keywordLocation
             if (keyword == null)
             {
                 keyword = new Keyword
                 {
-                    Text = keywordLocationDto.Keyword
+                    Text = keywordLocationDto.Name
                 };
 
                 _context.Keywords.Add(keyword);
@@ -58,15 +58,15 @@ namespace DataToAdvertisementTransformer.Controllers
                 KeywordId = keyword.Id,
                 Location = keywordLocationDto.Location,
                 DateTime = keywordLocationDto.DateTime,
-                Amount = keywordLocationDto.Amount
+                Amount = keywordLocationDto.Size
             };
 
             _context.KeywordLocations.Add(newKeywordLocation);
             await _context.SaveChangesAsync();
+  
+            var keywords = (await _context.Keywords.Include(k => k.KeywordLocations).ToListAsync()).Select(k => new KeywordDto(k.Text, k.Amount));
 
-            var keywords = await _context.Keywords.Select(k => new KeywordDto(k.Text, k.Amount)).ToListAsync();
-            
-            await _hubContext.Clients.All.SendAsync(JsonConvert.SerializeObject(keywords));
+            await _hubContext.Clients.All.SendAsync("newbubbles", JsonConvert.SerializeObject(keywords));
 
             return Ok();
         }
@@ -80,14 +80,14 @@ namespace DataToAdvertisementTransformer.Controllers
             foreach (var keywordLocationDto in keywordLocationDtos)
             {
                 // Check if keywordLocation is already found
-                var keyword = await _context.Keywords.FirstOrDefaultAsync(k => k.Text.Equals(keywordLocationDto.Keyword));
+                var keyword = await _context.Keywords.FirstOrDefaultAsync(k => k.Text.Equals(keywordLocationDto.Name));
            
                 // Create new keywordLocation
                 if (keyword == null)
                 {
                     keyword = new Keyword
                     {
-                        Text = keywordLocationDto.Keyword
+                        Text = keywordLocationDto.Name
                     };
 
                     _context.Keywords.Add(keyword);
@@ -100,7 +100,7 @@ namespace DataToAdvertisementTransformer.Controllers
                     KeywordId = keyword.Id,
                     Location = keywordLocationDto.Location,
                     DateTime = keywordLocationDto.DateTime,
-                    Amount = keywordLocationDto.Amount
+                    Amount = keywordLocationDto.Size
                 });
             }
 

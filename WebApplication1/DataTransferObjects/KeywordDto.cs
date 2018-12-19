@@ -1,14 +1,19 @@
+using Newtonsoft.Json;
+
 namespace DataToAdvertisementTransformer.DataTransferObjects
 {
     public class KeywordDto
     {
-        public string Keyword { get; set; }
-        public int Amount { get; set; }
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
         
-        public KeywordDto(string keyword, int amount)
+        [JsonProperty(PropertyName = "size")]
+        public int Size { get; set; }
+        
+        public KeywordDto(string name, int size)
         {
-            Keyword = keyword;
-            Amount = amount;
+            Name = name;
+            Size = size;
         }
     }
 }

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
+    "projectUniqueName": "/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
     "projectName": "DataToAdvertisementTransformer",
-    "projectPath": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
-    "outputPath": "/home/jorn/Documents/Git/DataToAdvertisementTransformer/WebApplication1/obj/",
+    "projectPath": "/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/WebApplication1.csproj",
+    "outputPath": "/home/djesse/Documents/Repos/DataToAdvertisementTransformer/WebApplication1/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"

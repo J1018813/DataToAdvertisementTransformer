@@ -30,6 +30,14 @@ namespace DataToAdvertisementTransformer
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
+            services.AddCors(options => options.AddPolicy("CorsPolicy", 
+                builder => 
+                {
+                    builder.AllowAnyMethod().AllowAnyHeader()
+                        .WithOrigins("http://127.0.0.1:5500")
+                        .AllowCredentials();
+                }));
+            
             services.AddSignalR();
         }
 
@@ -47,6 +55,7 @@ namespace DataToAdvertisementTransformer
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
             app.UseSignalR(routes =>
             {
                 routes.MapHub<BubbleHub>("/bubblehub");
